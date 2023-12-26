@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAX= 2e5;
+const int MAX= 2e5+2;
 
 vector<int> children[MAX];
 int subtree_size[MAX];
@@ -28,7 +28,7 @@ int main() {
 
  dfs(1);
  for (int i = 1; i <= N; i++) {
- cout << subtree_size[i] - 1;
+ cout << subtree_size[i] - 1<<" ";
 }
  cout << endl;
 }
